@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "172684741649",
+    "project_id": "hola-chat-app-8e711",
+    "storage_bucket": "hola-chat-app-8e711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172684741649:android:bc0623b6401b55620fb5b0",
+        "android_client_info": {
+          "package_name": "com.example.hola_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172684741649-9vhvrbqgrptlrbneoagb9o85rc0p3qr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcx31aQoBErN-6A2nool5F13Kz8ElMeCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172684741649-9vhvrbqgrptlrbneoagb9o85rc0p3qr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
