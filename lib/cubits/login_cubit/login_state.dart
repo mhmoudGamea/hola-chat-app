@@ -7,6 +7,12 @@ class LoginInitial extends LoginState {}
 
 class LoginLoading extends LoginState {}
 
-class LoginSuccess extends LoginState {}
+class LoginSuccess extends LoginState {
+  final UserCredential userCredential;
+  LoginSuccess({required this.userCredential});
+}
 
-class LoginFailure extends LoginState {}
+class LoginFailure extends LoginState {
+  final String error;
+  LoginFailure({required this.error});
+}
