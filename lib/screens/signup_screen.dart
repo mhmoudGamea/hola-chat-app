@@ -26,11 +26,12 @@ class SignupScreen extends StatelessWidget {
         if (state is SignupLoading) {
           _isLoading = true;
         } else if (state is SignupSucess) {
-          Navigator.of(context).pushNamed(LoginScreen.rn);
           _isLoading = false;
+          Navigator.of(context).pushNamed(LoginScreen.rn);
+          ShowToast.toast('Success Signup', Colors.green[300]!);
         } else if (state is SignupFailure) {
           _isLoading = false;
-          ShowSnackBar.showSnackBar(context, state.error, Colors.red[300]!);
+          ShowToast.toast(state.error, Colors.red[300]!);
         }
       },
       builder: (context, state) => ModalProgressHUD(

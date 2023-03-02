@@ -31,9 +31,10 @@ class LoginScreen extends StatelessWidget {
             'userId': state.userCredential.user!.uid,
             'userEmail': state.userCredential.user!.email,
           });
+          ShowToast.toast('Success Login', Colors.green[300]!);
         } else if (state is LoginFailure) {
           _isLoading = false;
-          ShowSnackBar.showSnackBar(context, state.error, Colors.red[300]!);
+          ShowToast.toast(state.error, Colors.red[300]!);
         }
       },
       builder: (context, state) => ModalProgressHUD(
