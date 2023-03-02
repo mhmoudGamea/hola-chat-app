@@ -7,6 +7,6 @@ class Message {
   Message(this.message, this.userId, this.userEmail);
 
   factory Message.fromJson(jsonData) {
-    return Message(jsonData[KMessage], jsonData[KUserId], jsonData[KUserEmail]);
+    return Message(jsonData[kMessage], jsonData[kUserId], jsonData[kUserEmail]);
   }
 }

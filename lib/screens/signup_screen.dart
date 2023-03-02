@@ -9,7 +9,7 @@ import '../custom_widgets/custom_text_form_field.dart';
 class SignupScreen extends StatefulWidget {
   static const rn = '/signup_screen';
 
-  SignupScreen({Key? key}) : super(key: key);
+  const SignupScreen({Key? key}) : super(key: key);
 
   @override
   State<SignupScreen> createState() => _SignupScreenState();
@@ -30,19 +30,21 @@ class _SignupScreenState extends State<SignupScreen> {
         body: Container(
           width: double.infinity,
           decoration: BoxDecoration(
-              gradient:
-                  LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [
-            KPrimaryColor[500]!,
-            KPrimaryColor[900]!,
-            KPrimaryColor[400]!,
-          ])),
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                kPrimaryColor[500]!,
+                kPrimaryColor[900]!,
+                kPrimaryColor[400]!,
+              ])),
           child: Column(
             children: [
               Container(
                 height: 170,
                 padding: const EdgeInsets.only(left: 20, top: 30),
                 alignment: Alignment.topLeft,
-                child: Image.asset(KLogo, fit: BoxFit.cover, width: 200),
+                child: Image.asset(kLogo, fit: BoxFit.cover, width: 200),
               ),
               Container(
                 padding: const EdgeInsets.only(right: 20),
@@ -65,7 +67,8 @@ class _SignupScreenState extends State<SignupScreen> {
                   padding: const EdgeInsets.only(top: 30),
                   decoration: const BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.only(topLeft: Radius.circular(40)),
+                    borderRadius:
+                        BorderRadius.only(topLeft: Radius.circular(40)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(10),
@@ -104,14 +107,17 @@ class _SignupScreenState extends State<SignupScreen> {
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
-                                      border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+                                      border: Border(
+                                          bottom: BorderSide(
+                                              color: Colors.grey[200]!)),
                                     ),
                                   ),
                                   CustomTextFormField(
                                     onValidate: (data) {
                                       if (data!.isEmpty) {
                                         return 'email is required';
-                                      } else if (!data.contains('@') || !data.contains('com')) {
+                                      } else if (!data.contains('@') ||
+                                          !data.contains('com')) {
                                         return 'invalid email';
                                       }
                                       return null;
@@ -123,7 +129,9 @@ class _SignupScreenState extends State<SignupScreen> {
                                   ),
                                   Container(
                                     decoration: BoxDecoration(
-                                      border: Border(bottom: BorderSide(color: Colors.grey[200]!)),
+                                      border: Border(
+                                          bottom: BorderSide(
+                                              color: Colors.grey[200]!)),
                                     ),
                                   ),
                                   CustomTextFormField(
@@ -153,7 +161,8 @@ class _SignupScreenState extends State<SignupScreen> {
                                   setState(() {
                                     isLoading = true;
                                   });
-                                  await Auth.createUserWithEmailPass(context, email!, password!);
+                                  await Auth.createUserWithEmailPass(
+                                      context, email!, password!);
                                   setState(() {
                                     isLoading = false;
                                   });
@@ -175,12 +184,13 @@ class _SignupScreenState extends State<SignupScreen> {
                                       fontSize: 15),
                                 ),
                                 TextButton(
-                                  style: TextButton.styleFrom(padding: const EdgeInsets.all(0)),
+                                  style: TextButton.styleFrom(
+                                      padding: const EdgeInsets.all(0)),
                                   child: const Text(
                                     'LOG IN',
                                     style: TextStyle(
                                         fontFamily: 'Cairo',
-                                        color: KPrimaryColor,
+                                        color: kPrimaryColor,
                                         letterSpacing: 1.1,
                                         fontSize: 14),
                                   ),

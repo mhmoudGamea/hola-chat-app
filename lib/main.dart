@@ -7,7 +7,7 @@ import './screens/login_screen.dart';
 import './screens/signup_screen.dart';
 import './screens/hola_chat_screen.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -29,8 +29,8 @@ class HolaChat extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        LoginScreen.rn: (context) => LoginScreen(),
-        SignupScreen.rn: (context) => SignupScreen(),
+        LoginScreen.rn: (context) => const LoginScreen(),
+        SignupScreen.rn: (context) => const SignupScreen(),
         HolaChatScreen.rn: (context) => HolaChatScreen(),
       },
     );

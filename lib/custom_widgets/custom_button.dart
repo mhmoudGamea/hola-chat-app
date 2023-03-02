@@ -18,8 +18,8 @@ class CustomButton extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              KPrimaryColor[400]!,
-              KPrimaryColor[700]!,
+              kPrimaryColor[400]!,
+              kPrimaryColor[700]!,
             ]),
       ),
       child: Text(

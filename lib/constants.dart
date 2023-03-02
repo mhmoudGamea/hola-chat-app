@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-const KPrimaryColor = Colors.orange;
-const KLogo = 'assets/images/logo.png';
-const KMessagesCollection = 'messages';
-const KMessage = 'message';
-const KUserId = 'userId';
-const KDate = 'date';
-const KUserEmail = 'userEmail';
+const kPrimaryColor = Colors.orange;
+const kLogo = 'assets/images/logo.png';
+const kMessagesCollection = 'messages';
+const kMessage = 'message';
+const kUserId = 'userId';
+const kDate = 'date';
+const kUserEmail = 'userEmail';
