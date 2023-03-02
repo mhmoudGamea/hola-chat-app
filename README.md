@@ -1,4 +1,9 @@
-##### screenshots about this app in demo screenshot folder
+<div style="display:flex; justify-content: center; align-items: center">
+  <img src='demo%20screenshot/Screenshot_20230302-161947.png' width='230'/>
+  <img src='demo%20screenshot/Screenshot_20230302-162021.png' width='230'/>
+  <img src='demo%20screenshot/different%20chat%20bubble.png' width='230'/>
+  <img src='demo%20screenshot/signup.png' width='230'/>
+</div>
 
 <hr/>
 <h4>what i learn</h4>
